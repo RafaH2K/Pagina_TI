@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web</title>
+    <link rel="stylesheet" href="css de tarea.css">
+</head>
+<body>
+    <div>
+        <h1>Protocolo HTTP</h1><hr>
+        <p>
+           Antes de empezar, en terminos generales, ¿qué es un protocolo? un protocolo puede 
+           definirse como un conjunto de reglas o instrucciones que se establecen.
+        </p>
+
+        <h2>Estructura y funcionamiento</h2>
+        <p>
+            HTTP se basa en el modelo de solicitud-respuesta, 
+            donde un cliente envía una solicitud a un servidor y 
+            el servidor responde con los datos solicitados. 
+            Cada interacción HTTP consta de dos partes principales:
+            <ul>
+                <li><b>Solicitud:</b> Incluye la línea de solicitud, 
+                    encabezados (información adicional) y un cuerpo opcional (datos adicionales).</li>
+                <li><b>Respuesta:</b> Contiene la línea de estado (código de respuesta), 
+                    encabezados (información sobre la respuesta) y un cuerpo (datos solicitados o representación del recurso).</li>
+
+            </ul>
+            El funcionamiento básico de HTTP implica la siguiente secuencia de pasos:
+            <ul>
+                <li><b>Inicio de la conexión:</b> El cliente establece una conexión TCP/IP 
+                    con el servidor web.</li>
+                <li><b>Envío de solicitud:</b> El cliente envía una solicitud HTTP al servidor.</li>
+                <li><b>Procesamiento de la solicitud:</b> El servidor procesa la solicitud y determina la acción a tomar.</li>
+                <li><b>Generación de respuesta:</b> El servidor crea una respuesta HTTP y la envía al cliente.</li>
+                <li><b>Recepción y procesamiento de la respuesta:</b> El cliente recibe y procesa la respuesta.</li>
+                <li><b>Cierre de la conexión:</b> La conexión TCP/IP se cierra después de completar la transacción.</li>
+            </ul>
+        </p><hr>
+       
+        <h2>Métodos de petición</h2>
+        <p>
+            Los métodos de solicitud en el protocolo HTTP definen la acción deseada para un recurso particular.
+            <ul>
+                <li><b>GET:</b> Solicita una representación de un recurso específico y se usa para recuperar información o recursos del servidor.</li>
+                <li><b>HEAD:</b> Solicita una respuesta idéntica a la de GET, pero sin el contenido del recurso. 
+                    Esto permite obtener solamente los encabezados de la respuesta, útil para verificar si un documento ha cambiado.</li>
+                <li><b>POST:</b> Utilizado para enviar datos a un recurso específico, a menudo causando cambios en el estado del servidor. 
+                    Es comúnmente usado para enviar datos a través de formularios web.</li>
+                <li><b>PUT:</b> Reemplaza todas las representaciones actuales del recurso de destino con los datos proporcionados en la solicitud. 
+                    Se emplea para actualizar o crear un recurso en el servidor.</li>
+                <li><b>DELATE:</b> Elimina un recurso específico en el servidor.</li>
+            </ul>
+        </p><hr>
+      
+        <h2>Códigos de respuesta</h2>
+        <p>
+            Los códigos de respuesta del protocolo HTTP se dividen en cinco clases, 
+            que indican el estado de una solicitud HTTP específica. Estas clases son:
+            <ul>
+                <li><b>Respuestas informativas (100-199):</b> Estos códigos proporcionan información provisional sobre el estado de la 
+                    solicitud y se utilizan para indicar que la solicitud ha sido recibida y se está procesando.</li>
+                <li><b>Códigos de Respuesta Exitosa (200-299):</b> Estos códigos indican que la solicitud se ha procesado correctamente y se 
+                    han obtenido resultados satisfactorios.</li>
+                <li><b>Códigos de Redirección (300-399):</b> Estos códigos se utilizan para redirigir al cliente a una ubicación diferente o 
+                    para proporcionar instrucciones adicionales sobre cómo acceder al recurso solicitado.</li>
+                <li><b>Códigos de Error del Cliente (400-499):</b> Estos códigos indican que la solicitud del cliente contiene errores o no se pudo completar 
+                    debido a acciones del cliente. Por ejemplo, el código 404 (No Encontrado) significa que el recurso solicitado no se encuentra en el servidor.</li>
+                <li><b>Códigos de Error del Servidor (500-599):</b> Estos códigos indican que hubo un error en el servidor al procesar la solicitud. Estos errores son 
+                    responsabilidad del servidor y no del cliente.</li>
+            </ul>
+            Estos códigos son esenciales para la comunicación cliente-servidor porque proporcionan información sobre el resultado de la solicitud y permiten a 
+            los desarrolladores y usuarios comprender lo que está sucediendo durante la interacción con un sitio web o aplicación web.
+        </p>
+    </div>
+    </html>
+</body>

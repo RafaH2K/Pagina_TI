@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puertos de red</title>
+    <link rel="stylesheet" href="css de tarea.css">
+</head>
+<body>
+    <h1>Puertos de red</h1><hr>
+    <p>
+        Los puertos de red son números utilizados por los protocolos TCP y UDP para diferenciar las aplicaciones 
+        de red que solicitan el servicio. Cada puerto está asociado a una aplicación o servicio específico, lo que 
+        permite que los paquetes de datos se dirijan a la aplicación correcta en un dispositivo. <br>
+        Los puertos TCP y UDP son los utilizados por los protocolos de red TCP y UDP para diferenciar 
+        entre las aplicaciones de red que solicitan servicio. Los puertos TCP y UDP están numerados para 
+        saber qué aplicación utiliza cada uno de ellos.
+    </p>
+    <h2><b>TCP</b></h2>
+    <p>
+        El protocolo TCP (Transmission Control Protocol) es un protocolo orientado a la conexión 
+        que proporciona una comunicación fiable y ordenada entre dos dispositivos. 
+        Antes de enviar datos, TCP establece una conexión entre dispositivos para garantizar 
+        que los datos se entreguen en el orden correcto y sin errores. Este protocolo lo utilizan 
+        las aplicaciones que requieren una transmisión de datos fiable, como la transferencia de archivos, 
+        el correo electrónico y la exploración web.
+    </p><br>
+    <h2><b>UDP</b></h2>
+    <p>
+        El UDP (User Datagram Protocol), por otro lado, es un protocolo sin conexión 
+        que proporciona una comunicación poco confiable y desordenada entre dos dispositivos. 
+        A diferencia de TCP, UDP no establece una conexión antes de enviar datos, lo que significa 
+        que los datos pueden llegar en cualquier orden o incluso perderse. Este protocolo es utilizado 
+        por aplicaciones que requieren una transmisión de datos rápida, como la transmisión en vivo y los juegos en línea.
+    </p><hr>
+    <p>
+        Algunos puertos utilizados por los protocolos de red mas populares son:
+        <ol>
+            <li><b>HTTP:</b> Utiliza el puerto 80. Es un protocolo utilizado para la transferencia de datos en la World Wide Web. 
+                HTTP permite la comunicación entre un cliente (navegador web) y un servidor web. Los navegadores web utilizan el 
+                protocolo HTTP para solicitar y recibir páginas web, imágenes y otros recursos desde un servidor web.</li>
+            <li><b>HTTPS:</b> El Protocolo seguro de transferencia de hipertexto utiliza el puerto 443. Es una versión 
+                segura del protocolo HTTP que utiliza el cifrado SSL/TLS para proteger la comunicación cliente-servidor. 
+                HTTPS se utiliza para garantizar la privacidad y seguridad de los datos transmitidos, como información personal 
+                y contraseñas, en aplicaciones como la banca en línea, el comercio electrónico y el correo electrónico.</li>
+            <li><b>SMTP:</b> Este utiliza el puerto 25. Es un protocolo utilizado para enviar correo electrónico desde 
+                un cliente de correo electrónico a un servidor de correo electrónico. SMTP es responsable de enviar y 
+                retransmitir mensajes de correo electrónico a través de internet.</li>
+            <li><b>POP3:</b> Utiliza el puerto 110. Es un protocolo utilizado para recuperar mensajes de correo electrónico 
+                de un servidor de correo electrónico a un cliente de correo electrónico. POP3 permite a los usuarios descargar 
+                sus mensajes de correo electrónico desde el servidor al dispositivo local.</li>
+            <li><b>IMAP:</b> Utiliza el puerto 143. Es un protocolo utilizado para acceder a mensajes de correo electrónico 
+                almacenados en un servidor remoto. IMAP permite a los usuarios ver, organizar y administrar sus mensajes de 
+                correo electrónico sin descargarlos en su dispositivo local.</li>
+            <li><b>MIME:</b> Esto no utiliza un puerto específico porque es una especificación para el formato de los 
+                mensajes de correo electrónico. MIME amplía las capacidades del Protocolo simple de transferencia de 
+                correo (SMTP) al permitir la transferencia de datos adjuntos, imágenes y contenido multimedia en mensajes 
+                de correo electrónico.</li>
+            <li><b>FTP:</b> Utiliza el puerto 21. Es un protocolo utilizado para transferir archivos entre un cliente y un 
+                servidor a través de una red. FTP le permite cargar y descargar archivos desde y hacia un servidor remoto.</li>
+            <li><b>FTPS:</b> Utiliza el puerto 990. Es una extensión del protocolo FTP que agrega soporte para el cifrado SSL/TLS. 
+                FTPS proporciona una capa adicional de seguridad al cifrar los datos transmitidos durante la transferencia de archivos.</li>
+            <li><b>SFTP:</b> No utiliza un puerto específico porque es una extensión del protocolo Secure Shell (SSH). 
+                SFTP permite la transferencia segura de archivos entre un cliente y un servidor remoto mediante cifrado SSH.</li>
+            <li><b>BitTorren:</b> No utiliza un puerto específico, ya que es un protocolo peer-to-peer utilizado para compartir archivos. 
+                BitTorrent permite a los usuarios descargar y cargar partes de archivos simultáneamente desde múltiples fuentes, 
+                facilitando la distribución eficiente de archivos grandes.</li>
+            <li><b>eDonkey, FastTrack, e IRC:</b> Estos tampoco usan puertos específicos. eDonkey y FastTrack son protocolos de punto a punto 
+                utilizados para compartir archivos, mientras que IRC es un protocolo utilizado para la comunicación en tiempo real en grupos o canales.</li>
+            <li><b>XMPP:</b> Este protocolo utiliza el puerto 5222. Es un protocolo utilizado para mensajería instantánea, 
+                presencia y comunicación en tiempo real. XMPP permite a los usuarios enviar mensajes instantáneos, 
+                participar en salas de chat y compartir archivos.</li>
+            <li><b>MTProto:</b> Este protocolo es utilizado por Telegram para una comunicación segura y no utiliza un puerto específico.</li>
+        </ol>
+    </p>
+</body>
+</html>
