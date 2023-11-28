@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenieria en prompt</title>
+</head>
+<body>
+    <div>
+    <h1>Turorial para hacer buenos prompts</h1>
+    <ol>
+        <li>Escribir instrucciones claras y especificas</li>
+        <ul>
+            <li>Delimitar siempre el prompt</li>
+            <li>Pedir output estructurado</li>
+            <li>Pedir si se cumplen las condiciones</li>
+            <li>Ofrecer un ejemplo del resultado</li>
+        </ul>
+        <li>Darle tiempo al modelo para pensar</li>
+        <ul>
+            <li>Especificar los pasos para terminar una tarea</li>
+            <li>Pedirle al modelo que trabaje en su propia solución </li>
+        </ul>
+        <li>Mejores prácticas para elaborar prompts</li>
+        <ul>
+            <li>Retroalimentación (mandarle mas peticiones al modelo hasta optener el resultado esperado)</li>
+            <li>Resumir (resumen, compendio o extracto)</li>
+            <li>Tener inferencia (verificar los pasos antes de terminar la peticion)</li>
+        </ul>
+    </ol>
+        <h2>Ejemplo 1 de prompts:</h2>
+            <p>Por favor, proporciona información clasificada en una tabla sobre los iniciales y los pseudo legendarios de todos los juegos de pokemon y ordenala en una tabla con las siguientes columnas: <br>
+                - Tipo del Pokémon. <br>
+                - Número de la pokedex. <br>
+                - Resumen de la Pokedex de estos Pokémon. <br>
+                - Rutas donde se encuentran (en caso de no encontrarse naturalmente, especificar cómo conseguirlos). <br>
+                <br>
+                Condiciones <br>
+                ¿Se ha proporcionado información para todos los Pokémon solicitados? <br>
+                ¿Están todas las columnas de la tabla completadas con la información solicitada? <br>
+                ¿Se ha proporcionado información precisa y coherente sobre cada Pokémon? <br>
+                <br>
+                Ejemplo <br>
+                | Pokémon | Tipo | Número de pokedex| Pokedex Summary | Rutas de Encuentro | <br>
+                |---------|------|------------------------|-----------------|-------------------| <br>
+                | Bulbasaur | Planta/Veneno | 1 | Dicen que la planta en su espalda absorbe nutrientes para su crecimiento. | Inicial de la primera generación (también puede obtenerse por intercambio) | <br>
+                <br>
+                Pasos para terminar la tarea: <br>
+                1. Solicitar la información clasificada de los Pokémon mencionados. <br>
+                2. Organizar la tabla con las columnas requeridas. <br>
+                3. Verificar que se proporcionen los detalles correctos para cada Pokémon. <br>
+                4. Asegurarse de incluir información sobre cómo encontrar Pokémon raros o no disponibles naturalmente en el mapa. <br>
+                </p>
+                <h2>Resultado obtenido</h2>
+                <img src="chat gpt.png"><br>
+                <h2>Ejemplo 2</h2>
+                <p>
+                    Por favor, ofrece un análisis completo de la Guerra Fría, incluyendo sus causas, desarrollo, consecuencias y legado abordando los siguientes temas: <br>
+                    - Orígenes y causas que llevaron al surgimiento de la Guerra Fría. <br>
+                    - Principales eventos, conflictos y momentos significativos durante este período. <br>
+                    - Impacto político, económico y social en las potencias involucradas y el mundo en general. <br>
+                    - Consecuencias a largo plazo y el legado histórico de la Guerra Fría. <br>
+<br>
+                    ¿Se ha proporcionado información detallada y completa sobre los aspectos mencionados de la Guerra Fría? <br>
+                    ¿Se abordaron las causas, desarrollo, consecuencias y legado de manera exhaustiva y coherente? <br>
+                    ¿Se presentaron ejemplos significativos y datos relevantes para respaldar el análisis? <br>
+<br>
+                    El análisis deberá de abarcar desde el surgimiento de las tensiones entre las superpotencias después de la Segunda Guerra Mundial hasta la disolución de la Unión Soviética, incluyendo eventos clave como la Crisis de los Misiles en Cuba, la Carrera Espacial y la Guerra de Vietnam, así como el impacto en la política global y la división ideológica del mundo. <br>
+<br>
+                    Para verifica que cumpla con: <br>
+                    1. Examinar y explicar las causas fundamentales de la Guerra Fría. <br>
+                    2. Narrar los eventos y desarrollos principales que definieron este período. <br>
+                    3. Detallar las repercusiones políticas, económicas y sociales en las naciones involucradas y el resto del mundo. <br>
+                    4. Contextualizar las consecuencias duraderas y el legado histórico de la Guerra Fría. <br>
+                </p>
+            <h2>Resultado obtenido</h2>
+            <img src="chat gpt 2.png"> <br>
+            <h2>Ejemplo 3</h2>
+            <p>
+                Proporciona una tabla que ordene las canciones más escuchadas de cada género musical del año 2005 ordenada en una tabla con las siguientes columnas. <br> 
+                - Género. <br>
+                - Nombre de la Canción. <br>
+                - Artista. <br>
+                - Año de Lanzamiento. <br>
+<br>
+                ¿Se ha proporcionado información para las canciones más escuchadas de cada género en el año 2005? <br>
+                ¿Están todas las columnas de la tabla completadas con la información solicitada? <br>
+                ¿Se ha corroborado la precisión de los datos con respecto al año de lanzamiento de cada canción? <br>
+<br>
+                Ejemplo: <br>
+                | Género    | Nombre de la Canción | Artista       | Año de Lanzamiento  | <br>
+                |-----------|----------------------|---------------|---------------------| <br>
+                | Pop       | "Blinding Lights"    | The Weeknd    | 2019                | <br>
+                | Hip-Hop   | "The Box"            | Roddy Ricch   | 2019                | <br>
+                | Rock      | "Reptilia"           | The strokes   | 2004                | <br>
+<br>
+                1. Recopilar información sobre las canciones más escuchadas de cada género musical durante el año 2005. <br>
+                2. Organizar la tabla con las columnas requeridas. <br>
+                3. Verificar la exactitud de los datos proporcionados, especialmente el año de lanzamiento de cada canción. <br>
+                4. Asegurar que se incluyan canciones representativas de diferentes géneros musicales. <br>
+            </p>
+            <img src="chat gpt 3.png">
+    </div>
+</body>
+</html>
